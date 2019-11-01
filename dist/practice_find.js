@@ -15,10 +15,8 @@ var findBigger = function (x, y) {
     return result;
 };
 console.log("findSame : " + findSame(4, 4) + " findBigger : " + findBigger(4, 5));
-// let findPerson = (x: number, y: number): any => {
-//   let result: any = find_people.find(x => x === y);
-//   return result;
-// };
-// console.log(
-//   "findPerson : " + findPerson(2,2);
-// );
+var findPerson = function (x) {
+    var result = find_people.find(function (person) { return person.id === x; });
+    return result;
+};
+console.log(findPerson(2));
