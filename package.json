@@ -14,7 +14,8 @@
   },
   "scripts": {
     "build": "tsc",
-    "test": "jest"
+    "test": "jest",
+    "type": "npx ts-node"
   },
   "devDependencies": {
     "@types/cheerio": "^0.22.13",
