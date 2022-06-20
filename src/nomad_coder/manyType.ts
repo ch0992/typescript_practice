@@ -80,3 +80,31 @@ yg2.age = 41
 const playerMaker2 = (name:string) : player2 => ({name})
 const yg3 = playerMaker2("ygyg")
 yg3.age = 41
+
+//************************************* */
+//readonly
+type player4 = {
+    readonly name:Name
+    age?:Age
+}
+// player4.name = "sd"
+
+const numbers2: readonly number[] = [1,2,3,4,5]
+// numbers2.push(7)
+
+const names2: readonly string[] = ["1","2"]
+// names2.push{"sad"}
+
+//************************************* */
+// Tuple 
+const player7: [string, number, boolean] = ["yg",1,true]
+// player7[0] = 1
+// player7[1] = "1"
+
+const player8: readonly [string, number, boolean] = ["yg",1,true]
+// player7[0] = 1
+// player7[1] = "1"
+
+
+
+
