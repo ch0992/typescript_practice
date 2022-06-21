@@ -15,7 +15,8 @@
   "scripts": {
     "build": "tsc",
     "test": "jest",
-    "type": "npx ts-node"
+    "type": "npx ts-node src/nomad_coder/manyType.ts",
+    "func": "npx ts-node src/nomad_coder/functions.ts"
   },
   "devDependencies": {
     "@types/cheerio": "^0.22.13",

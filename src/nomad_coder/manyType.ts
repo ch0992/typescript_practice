@@ -106,5 +106,44 @@ const player8: readonly [string, number, boolean] = ["yg",1,true]
 // player7[1] = "1"
 
 
+//************************************* */
+//any
+
+const c : any[] = [1,2,3,4]
+const d : any = true
+
+//any는 어떠한 경우도 수용
+//c+d
+
+//************************************* */
+//unknown
+let e:unknown;
+
+if (typeof e === 'number'){
+    let e2 = e + 1;    
+}
+
+if(typeof e === "string"){
+    let e2 = e.toUpperCase();
+}
 
 
+//************************************* */
+//void => return 하지 않는 함수
+
+function hello():void{
+    console.log('x');
+}
+
+//************************************* */
+//never
+
+function hello2(name:string|number){
+    if(typeof name === "string"){
+
+    }else if(typeof name === "number"){
+
+    }else{
+        name
+    }
+}
